@@ -1,0 +1,1 @@
+Invoke-Webrequest -Uri "https://github.com/stascorp/rdpwrap/releases/download/v1.6.2/RDPWrap-v1.6.2.zip" -OutFile $RDP_WRAPPER;if (!(Test-Path -Path $RDP_WRAPPER)) {Write-Host "Failed to download RDP Wrapper.";Invoke-SelfDestruct}
